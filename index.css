@@ -71,3 +71,6 @@ body{
     font-weight: bold;
     text-decoration: none;
 }
+.navBar{
+border-radius: 5px;
+}
