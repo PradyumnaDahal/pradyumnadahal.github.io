@@ -42,17 +42,17 @@ class VolumeSlider{
      */
     let cycle = () => {
       if(this._charging && ++this._charge < 100){
-           
+        document.getElementById("out").innerHTML = this._charge;
         requestAnimationFrame(() => {
           cycle();
         });
       }
 
       // Update icon styles
-     //this.shape.style.transform = `scale(${this._charge / 100})`;	
-       //document.getElementById("out").innerHTML = this._charge;	
-       	
-      this.shape.style.transform = `translateX(${-33 +this._charge/100 * 20}px)`;	
+     //this.shape.style.transform = `scale(${this._charge / 100})`;
+       //document.getElementById("out").innerHTML = this._charge;
+
+      this.shape.style.transform = `translateX(${-33 +this._charge/100 * 20}px)`;
       this.icon.style.transform  = `rotate(${-0.35 * this._charge * 0.75}deg)`;
     };
 
@@ -123,23 +123,23 @@ class VolumeSlider{
         // End of animation
         this._lock = false;
          setTimeout(function(){
-            /* if("index.html".indexOf(document.location.href) > -1) 
+            /* if("index.html".indexOf(document.location.href) > -1)
              document.getElementById("out").innerHTML = "true";
              }
              else{
              document.getElementById("out").innerHTML = "false";
              }*/
-             document.getElementById("out").innerHTML = x;
-             if(x < 110){
+             document.getElementById("out2").innerHTML = x;
+             if(x < 110 && x > 20){
              document.location.href = "index.html";
              }
-             else if (x < 290){
+             else if (x < 290 && x > 20){
              document.location.href = "b.html";
              }
-             else if(x < 470){
-              document.location.href = "c.html";       
+             else if(x < 470 && x > 20){
+              document.location.href = "c.html";
              }
-             else{
+             else if(x > 20){
                  document.location.href = "d.html";
              }
              /*if(x > 100 && document.location.href != "b.html"){
@@ -148,8 +148,8 @@ class VolumeSlider{
              else if(document.location.href != "index.html"){
                 // document.location.href = "index.html"
              }*/
-        }, 500); 
-        
+        }, 500);
+
           // Set values
         x            = x_cap;
         y            = 0;
