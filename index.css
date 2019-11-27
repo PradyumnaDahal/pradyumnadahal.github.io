@@ -51,7 +51,7 @@ body{
 
 
 .volume-indicator{
-  background-color: #6e33a5;
+  background-color: #FFF;
   border-radius   : 50%;
   height          : 12px;
   position        : absolute;
@@ -72,5 +72,7 @@ body{
     text-decoration: none;
 }
 .navBar{
-border-radius: 5px;
+border-radius: 0px 0px 5px 5px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color:#222222
 }
