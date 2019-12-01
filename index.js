@@ -25,7 +25,7 @@ class VolumeSlider{
    * Begin charge cycle
    */
   charge(){
-    this.indicator.style.left = 10;
+
     if(this._lock){ return false; }
     this._lock = true;
 
@@ -36,13 +36,14 @@ class VolumeSlider{
     // Hide indicator
     this.indicator.style.visibility = 'hidden';
     this.indicator.style.opacity    = '0';
+    this.indicator.style.left = 10;
 
     /**
      * Charge loop
      */
     let cycle = () => {
       if(this._charging && ++this._charge < 100){
-        document.getElementById("out").innerHTML = this._charge;
+        //document.getElementById("out").innerHTML = this._charge;
         requestAnimationFrame(() => {
           cycle();
         });
@@ -129,7 +130,7 @@ class VolumeSlider{
              else{
              document.getElementById("out").innerHTML = "false";
              }*/
-             document.getElementById("out2").innerHTML = x;
+            // document.getElementById("out2").innerHTML = x;
              if(x < 110 && x > 20){
              document.location.href = "index.html";
              }

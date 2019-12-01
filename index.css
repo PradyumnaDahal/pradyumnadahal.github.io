@@ -10,7 +10,7 @@ body{
   margin     : 0em auto;
   padding    : 5px 0;
   width      : 100%;
-  
+
 }
 
 
@@ -64,6 +64,10 @@ body{
     color : #FFF;
     font-family: "Verdana", Times, serif;
     text-decoration: none;
+
+}
+.page:hover {
+  color: #E27663;
 }
 .selected{
     color: #E27663;
@@ -74,5 +78,23 @@ body{
 .navBar{
 border-radius: 0px 0px 5px 5px;
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    background-color:#222222
+    background-color:#222222;
+}
+.meDiv{
+  background-color: #F9F9FF;
+  height: 30em;
+
+}
+.meDescriptionBox{
+
+}
+.meContainer{
+    background-color: #123;
+    width: 100%;
+    max-width: 960px;
+    box-sizing: border-box;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
 }
