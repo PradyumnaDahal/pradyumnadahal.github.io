@@ -1,48 +1,59 @@
 <head>
-<link rel="stylesheet" href="index.css"></head>
+  <link rel="stylesheet" href="index.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
 <body>
-    <div class= "navBar" style="width= 1em;align = left">
+  <div class="navBar" style="width= 1em;align = left">
     <div id="volume-slider" style="align=left;">
-  <svg id="volume-icon" class="volume-icon" viewBox="-1 0 33 32">
-    <defs>
-      <mask id="circle-mask" x="-26" y="0" width="33" height="32">
-        <circle cx="-1" cy="16" r="40" fill="white" id="circle-mask-shape" />
-      </mask>
+      <svg id="volume-icon" class="volume-icon" viewBox="-1 0 33 32">
+        <defs>
+          <mask id="circle-mask" x="-26" y="0" width="33" height="32">
+            <circle cx="-1" cy="16" r="40" fill="white" id="circle-mask-shape" />
+          </mask>
 
-      <mask id="volume-mask" x="-1" y="0" width="33" height="32">
-        <path d="M5.975 17.504l14.287.001-6.367 6.366L16.021 26l10.004-10.003L16.029 6l-2.128 2.129 6.367 6.366H5.977z" fill="grey" mask="url(#circle-mask)" ></path>
-      </mask>
+          <mask id="volume-mask" x="-1" y="0" width="33" height="32">
+            <path d="M5.975 17.504l14.287.001-6.367 6.366L16.021 26l10.004-10.003L16.029 6l-2.128 2.129 6.367 6.366H5.977z" fill="grey" mask="url(#circle-mask)"></path>
+          </mask>
 
-      <linearGradient id="grad-1" x1="0" x2="1" y1="0" y2="0">
-        <stop offset="20%" stop-color="#D93025" />
-        <stop offset="100%" stop-color="#D93025" />
-      </linearGradient>
-    </defs>
+          <linearGradient id="grad-1" x1="0" x2="1" y1="0" y2="0">
+            <stop offset="20%" stop-color="#D93025" />
+            <stop offset="100%" stop-color="#D93025" />
+          </linearGradient>
+        </defs>
 
-    <path class="volume-icon-bg" fill="#FFF" d="M5.975 17.504l14.287.001-6.367 6.366L16.021 26l10.004-10.003L16.029 6l-2.128 2.129 6.367 6.366H5.977z"></path>
+        <path class="volume-icon-bg" fill="#FFF" d="M5.975 17.504l14.287.001-6.367 6.366L16.021 26l10.004-10.003L16.029 6l-2.128 2.129 6.367 6.366H5.977z"></path>
 
-    <rect x="-1" y="0" width="33" height="32" mask="url(#volume-mask)" fill="url(#grad-1)" />
+        <rect x="-1" y="0" width="33" height="32" mask="url(#volume-mask)" fill="url(#grad-1)" />
 
-  </svg>
-
-
-  <div class="volume-track">
-      <div style="width:100%; padding-top: 10px;">
-      <a class="selected" style="display: inline;padding-left: 30px;" href="index.html">HOME</a>
-      <a class="page" style="display: inline; padding-left: 100px;" href="b.html">PROJECTS</a>
-       <a class="page" style="display: inline; padding-left: 100px;" href="c.html">HIRE ME</a>
-        <a class="page" style="display: inline; padding-left: 100px;" href="d.html">CONTACT ME</a>
+      </svg>
+      <div class="volume-track">
+        <div style="width:100%; padding-top: 10px;">
+          <a class="selected" style="display: inline;padding-left: 30px;" href="index.html">HOME</a>
+          <a class="page" style="display: inline; padding-left: 100px;" href="b.html">PROJECTS</a>
+          <a class="page" style="display: inline; padding-left: 100px;" href="c.html">HIRE ME</a>
+          <a class="page" style="display: inline; padding-left: 100px;" href="d.html">CONTACT ME</a>
+        </div>
+        <span id="volume-indicator" class="volume-indicator" style="left: 50;"></span>
+        <input type="hidden" name="volume" id="volume-input" />
       </div>
-    <span id="volume-indicator" class="volume-indicator" style="left            : 50;"></span>
-    <input type="hidden" name="volume" id="volume-input" />
-
-  </div>
-
-   </div>
     </div>
-    <h3 style="padding-left:1em">^click me!</h3>
-   
-    <script src="index.js"></script>
+  </div>
+  <!-- > End of top nav bar <!-->
+
+  <h3 style="padding-left:1em">^click me!</h3>
+  <div style="float:left; margin:0;width:100%; flex: 1; background-color:#9FC3E8;">
+    <div style="float:left; margin-right:10px; width:60%;padding-top:5.0em"> <!border:1px solid #738912;>
+      <p class="preTitle">This is me</p>
+      <p class="title">Pradyumna Dahal</p>
+      <p class="preTitle"> Yep its me</p>
+    </div>
+    <div style="float:left;width:35%;">
+      <img src="me.png" alt="Picture of me" style="align:middle;max-width: 100%; height: auto;">
+    </div>
+  </div>
+  <script src="index.js"></script>
 </body>
 
 <!-- Volume icon by https://icomoon.io -->
