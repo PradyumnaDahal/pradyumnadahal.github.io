@@ -9,7 +9,6 @@ body{
   align-items: center;
   align : left;
   display    : flex;
-  margin     : 0em auto;
   padding    : 5px 0;
   width      : 100%;
 
@@ -123,8 +122,48 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 .services{
   float:left;
   background-color: #FFF;
-  border: 1px solid;
+  /*border: 1px solid;*/
   width: 30%;
   margin: 1.46%;
   height: 500px;
+}
+.services:hover > p{
+  color:#799FFE !important;
+}
+.services > img{
+  width:40px;
+  margin: 5px auto;
+  display: block;
+}
+.services > .change{
+    display: none;
+}
+.services:hover > .change{
+    display: block;
+}
+.services:hover > .normal{
+    display: none;
+}
+.services > .normal{
+  display: block;
+}
+
+.normal a{
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+
+.easteregg{
+  font-size: 14px;
+  color: white;
+  margin: 0px 0px -0px 7px;
+  padding-top: 0px;
+  /*color: #212121; /*To hide*/
+}
+.eastereggdiv{
+  margin-top: -30px;
+}
+.easteregg:nth-of-type(1){
+  padding-top: 10px;
 }
