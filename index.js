@@ -66,6 +66,9 @@ class VolumeSlider{
    * @param  {float} charge
    */
   release(charge){
+    if(charge < 5){
+      charge = 5;
+    }
     // Reset charge animation
     this._charging = false;
     requestAnimationFrame(() => { this.shape.style.transform = `scale(0)`; });
