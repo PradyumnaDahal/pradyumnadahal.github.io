@@ -121,7 +121,7 @@ class VolumeSlider{
 
         // Set values
         x            = this.linearTween(elapsed, 0, x_diff, duration);
-        rotate       = this.easeInOut(elapsed, -0.4 * this._charge, 0.4 * this._charge , duration);
+        rotate       = this.easeInOut(elapsed, -0.7 * this._charge, 0.4 * this._charge , duration);
         this._volume = this.easeOut(elapsed, volume, charge - volume, duration * 0.5);
       }else{
         // End of animation
